@@ -1,0 +1,28 @@
+<?php
+header("Cache-Control: no-store");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Sistema de Mensajería</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div>
+        <h1>Inicio de Sesión</h1>
+
+        <form method="post" action="LogginFinal.php">
+            <input type="hidden" name="initiateSession">
+            <input type="text" name="usuario" placeholder="Ingrese usuario" required><br>
+            <input type="password" name="pass" placeholder="Ingrese contraseña" maxlength="30" required><br>
+            <input type="submit" value="Ingresar">
+        </form>
+    </div>
+</body>
+
+</html>
